@@ -37,8 +37,8 @@ export function es5() {
 
 export function es6() {
   return {
-    defaults: function defaults (x=12) { return x },
-    rest: function rest (...x) { return x.toString() },
-    spread: function spread (x,y,z=0) { return x+y+z }
+    defaults(x=12) { return x },
+    rest(...x) { return x.toString() },
+    spread(x,y,z=0) { return x+y+z }
   }
 }
