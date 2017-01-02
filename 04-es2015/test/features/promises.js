@@ -14,11 +14,9 @@ export default function() {
     })
   })
 
-  it.skip('should show Promise behavior in ES6', (done) => {
-    es6((err, val) => {
-      if (err) { done(err) }
+  it('should show Promise behavior in ES6', () => {
+    es6().then(val => {
       val.should.eql(10)
-      done()
     })
   })
 }

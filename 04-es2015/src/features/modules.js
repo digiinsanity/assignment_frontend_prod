@@ -6,5 +6,5 @@ export function es5() {
 import uuid from 'uuid'
 
 export function es6() {
-  return uuid.v4()
+  return uuid()
 }
